@@ -9,7 +9,7 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => (
         onClick={() => onLeaveFeedback(option)}
         className={css.feedbackBtn}
       >
-        {option}
+        {option.charAt(0).toUpperCase() + option.slice(1)}
       </button>
     ))}
   </div>
